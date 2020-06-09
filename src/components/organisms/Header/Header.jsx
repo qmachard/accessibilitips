@@ -3,7 +3,7 @@ import * as PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import classNames from "classnames";
 
-import 'src/components/organisms/Header/Header.scss';
+import './Header.scss';
 
 const Header = ({ className }) => {
   const componentClassNames = classNames('header', className);

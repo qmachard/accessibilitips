@@ -1,1 +1,1 @@
-export { default } from 'src/components/organisms/Header/Header';
+export { default } from './Header';
