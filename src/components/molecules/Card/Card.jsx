@@ -44,14 +44,14 @@ const Card = ({title, description, image, link, padding, className}) => {
 };
 
 Card.propTypes = {
-  link: PropTypes.bool,
+  link: PropTypes.string,
   padding: PropTypes.bool,
   className: PropTypes.string,
 };
 
 Card.defaultProps = {
   padding: false,
-  link: false,
+  link: null,
   className: null,
 };
 

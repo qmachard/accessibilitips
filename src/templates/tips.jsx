@@ -1,21 +1,24 @@
 import React from "react"
 import { graphql } from "gatsby"
 
+import Layout from "../components/global/Layout";
+
 const Tips = ({data}) => {
   const { markdownRemark } = data; // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark;
 
   return (
-    <div className="blog-post-container">
-      <div className="blog-post">
+    <Layout className="index-page" title={frontmatter.title} description="Lorem ipsum" previous="/">
+      <div className="container">
         <h1>{frontmatter.title}</h1>
         <h2>{frontmatter.date}</h2>
+
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
-    </div>
+    </Layout>
   )
 }
 

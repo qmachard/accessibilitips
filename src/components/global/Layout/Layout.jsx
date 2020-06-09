@@ -11,7 +11,7 @@ import './Layout.scss';
 /**
  * Layout Component
  */
-const Layout = ({ title, description, theme, className, children }) => {
+const Layout = ({ title, description, theme, className, previous, children }) => {
   const componentClassNames = classNames('layout', className);
 
   return (
@@ -25,7 +25,7 @@ const Layout = ({ title, description, theme, className, children }) => {
         <meta name="twitter:title" content={title} />
       </Helmet>
 
-      <Header/>
+      <Header previous={previous}/>
 
       <main className="layout_main">
         {children}
