@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import classNames from 'classnames';
 
-import Header from '../../molecules/Header';
+import Header from '../../organisms/Header';
 import Footer from '../../organisms/Footer';
 
 import './Layout.scss';

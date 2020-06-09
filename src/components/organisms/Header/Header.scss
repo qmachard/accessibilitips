@@ -1,0 +1,15 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  padding: 20px 30px;
+  background: var(--color-background-tertiary);
+}
+
+.header_logo {
+  font-size: 1.5em;
+}
