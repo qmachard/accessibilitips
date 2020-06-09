@@ -1,22 +1,35 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import * as PropTypes from 'prop-types';
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from '../components/global/Layout';
+import Card from "../components/molecules/Card";
+
+const title = "Tips #12";
+const link = "/";
+const description = (
+  <>
+    <p>⌨️ On dit tout le temps que la navigation au clavier est importante, c'est vrai !</p>
+
+    <p>🤔 Mais on se demande parfois quel raccourci dois-je associer à telle action ?</p>
+
+    <p>✅ Voici une première liste !</p>
+
+    <p>#accessibilite #a11y #navigationclavier #shortcuts</p>
+  </>
+);
+const image = {
+  src: "https://pbs.twimg.com/media/EaDjgfhXkAE5SfF?format=png",
+  alt: "Intégrer des sous-titres"
+}
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+  <Layout className="index-page" title="Accessibili'Tips" description="Lorem ipsum">
+    <div className="container">
+      <Card title={title} description={description} link={link} image={image} />
+      <Card title={title} description={description} link={link} />
+      <Card title={title} description={description} link={link} image={image} />
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;

@@ -1,0 +1,34 @@
+@import 'variables';
+@import 'mixins';
+
+:root {
+  --font-family: #{$font-family};
+  --font-family-title: #{$font-family-title};
+  --font-family-serif: #{$font-family-serif};
+  --font-normal: #{$font-normal};
+  --font-semibold: #{$font-semibold};
+  --font-bold: #{$font-bold};
+  --font-size-normal: 16px;
+  --font-size-title-1: 50px;
+  --color-background: #{$color-pepper-100};
+  --color-background-secondary: #{$color-secondary};
+  --color-background-tertiary: #{$color-pepper-90};
+  --color-background-tertiary-hover: #{$color-pepper-50};
+  --color-background-inverted: #{$color-salt-10};
+  --color-background-code: #{$color-pepper-80};
+  --color-text: #{$color-salt-10};
+  --color-text-inverted: #{$color-pepper-100};
+  --color-primary: #{$color-primary};
+  --color-secondary: #{$color-salt-40};
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07);
+  --shadow-hover: 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07);
+  --color-overlay: rgba(0, 0, 0, .4);
+}
+
+[data-theme="light"] {
+  --color-background: #{$color-salt-10};
+  --color-background-tertiary: #{$color-salt-10};
+  --color-text: #{$color-pepper-80};
+  --color-secondary: #{$color-pepper-50};
+  --color-overlay: rgba(255, 255, 255, .4);
+}
